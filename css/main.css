@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Signika:wght@300&display=swap');
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+#navbar {
+    font-size: 20px;
+}
+
+.view {
+    display: none;
+}
+
+#btn-ingresar {
+    background-color: #ea5b0c;
+    color: white;
+    font-weight: bold;
+}
+
+#sidebar-container .menu {
+    width: 18rem;
+}
