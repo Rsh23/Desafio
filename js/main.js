@@ -1,6 +1,6 @@
 let productos;
 let categorias;
-let Url = "http://localhost:8000/";
+let Url = "https://avocadostudio.cl/";
 
 $(function() {
 
