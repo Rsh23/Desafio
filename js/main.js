@@ -111,7 +111,6 @@ function searchProduct() {
 
                 // Iteramos y insertamos los productos segun busqueda
                 newArrayProductos.data.map((p) => {
-                    console.log(p)
                     $("#productos").append(crearProducto(p))
                 });
 
