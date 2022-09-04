@@ -22,3 +22,15 @@ body {
 #sidebar-container .menu {
     width: 18rem;
 }
+
+.right {
+    margin-right: 20px;
+}
+
+.space {
+    margin-top: 100px;
+}
+
+.btn-search {
+    border: 0;
+}
