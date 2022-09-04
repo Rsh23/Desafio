@@ -1,6 +1,6 @@
 let productos;
 let categorias;
-let Url = "https://avocadostudio.cl/";
+let url = "https://avocadostudio.cl/";
 
 $(function() {
 
@@ -16,7 +16,7 @@ $(function() {
 async function getCategories() {
 
     // Llamamos a la api
-    const response = await fetch(Url + "categories");
+    const response = await fetch(url + "categories");
 
     // Aqui convertimos los datos en JSON
     categorias = await response.json();
@@ -33,7 +33,7 @@ async function getCategories() {
 async function getProducts() {
 
     // Llamamos a la api
-    const response = await fetch(Url + "products");
+    const response = await fetch(url + "products");
 
     // Aqui convertimos los datos en JSON
     productos = await response.json();
@@ -96,7 +96,7 @@ function searchProduct() {
         // Url para la conexion a la api
 
         $.ajax({
-            url: Url + "search/product",
+            url: url + "search/product",
             type: 'get',
             dataType: 'json',
             data: data,
