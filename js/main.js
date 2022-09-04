@@ -1,5 +1,6 @@
 let productos;
 let categorias;
+let Url = "http://localhost:8000/";
 
 $(function() {
 
@@ -15,7 +16,7 @@ $(function() {
 async function getCategories() {
 
     // Llamamos a la api
-    const response = await fetch("http://localhost:8000/categories");
+    const response = await fetch(Url + "categories");
 
     // Aqui convertimos los datos en JSON
     categorias = await response.json();
@@ -32,7 +33,7 @@ async function getCategories() {
 async function getProducts() {
 
     // Llamamos a la api
-    const response = await fetch("http://localhost:8000/products");
+    const response = await fetch(Url + "products");
 
     // Aqui convertimos los datos en JSON
     productos = await response.json();
@@ -93,10 +94,9 @@ function searchProduct() {
         let data = $(this).serializeArray();
 
         // Url para la conexion a la api
-        let url = "http://localhost:8000/search/product/";
 
         $.ajax({
-            url: url,
+            url: Url + "search/product",
             type: 'get',
             dataType: 'json',
             data: data,
